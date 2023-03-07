@@ -9,7 +9,7 @@ public class Bmi {
     public Bmi(Double weight, Double height) {
         this.weight = weight;
         this.height = height;
-        this.bmi = (height * height) / weight;
+        this.bmi =  weight / Math.pow(height / 100, 2);
         calculateType();
     }
 
